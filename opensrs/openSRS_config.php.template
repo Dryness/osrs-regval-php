@@ -1,0 +1,50 @@
+<?php
+// Paths
+// Setting default path to the same directory this file is in
+define('DS', DIRECTORY_SEPARATOR);
+define('PS', PATH_SEPARATOR);
+define('CRLF', "\r\n");
+define('OPENSRSURI', dirname(__FILE__));
+define('OPENSRSDOMAINS', OPENSRSURI . DS . 'domains');
+
+/** 
+* OpenSRS reseller username
+*/
+define('OSRS_USERNAME', 'opensrs_reseller_username_here');
+
+/** 
+* OpenSRS reseller private Key. Please generate a key if you do not already have one.
+*/
+define('OSRS_KEY', 'opensrs_reseller_private_key_here');
+
+/** 
+* OpenSRS domain service API url.
+* LIVE => rr-n1-tor.opensrs.net
+* TEST => horizon.opensrs.net
+*/
+define('OSRS_HOST', 'opensrs_host_here');
+
+/**
+* OpenSRS default encryption type => ssl, sslv2, sslv3, tls
+*/
+define('CRYPT_TYPE', 'ssl');
+
+/** 
+* OpenSRS API SSL port
+*/
+define('OSRS_SSL_PORT', '55443');
+
+/** 
+* OpenSRS protocol. XCP or TPP.
+*/
+define('OSRS_PROTOCOL', 'XCP');
+
+/** 
+* OpenSRS version
+*/
+define('OSRS_VERSION', 'XML:0.1');
+
+/** 
+* OpenSRS domain service debug flag
+*/
+define('OSRS_DEBUG', 0);
