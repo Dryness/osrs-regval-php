@@ -14,7 +14,7 @@ To-Do
 -----
 
 - Split things off into individual files
-- Improve CSS (it's bad right now, I know)
+- Fix CSS
 - Look into AJAX-ifying things
 
 Requirements
@@ -115,4 +115,4 @@ can "Add New Rule" by typing in the subnet for where your application will be
 hosted.  A total of 5 addresses can be added by default. 
 
 IMPORTANT NOTE:  Adding a new IP address can take up to 15 minutes to
-propagate into our system.   
+propagate into our system.
