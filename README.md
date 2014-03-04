@@ -6,7 +6,32 @@ to their support staff for the new Domain Verification Procedure without requiri
 to the OpenSRS Reseller Web Interface (RWI).
 
 This tool is based off the official OpenSRS PHP Toolkit found here:
+
 https://github.com/OpenSRS/osrs-toolkit-php
+
+
+To-Do
+-----
+
+- Split things off into individual files
+- Improve CSS (it's bad right now, I know)
+- Look into AJAX-ifying things
+
+Requirements
+------------
+
+This tool requires the following:
+
+- PHP 5 (5.3+ recommended)
+- OpenSSL
+- PEAR: http://pear.php.net/
+- getmypid() enabled
+- cURL: required for OMA
+
+This tool passes all data in JSON, so your PHP install must have json_encode
+and json_decode.  These functions are standard in php 5.3+.  If an earlier 
+version of PHP 5 is being used, the php-json libraries at 
+http://pecl.php.net/package/json will be required. 
 
 
 Getting Started
@@ -51,23 +76,6 @@ __OSRS_KEY__
 __OSRS_DEBUG__
 > WHen set to 1, the Toolkit will spit out the raw XML request/response.
      
-
-Requirements
-------------
-
-This tool requires the following:
-
-- PHP 5 (5.3+ recommended)
-- OpenSSL
-- PEAR: http://pear.php.net/
-- getmypid() enabled
-- cURL: required for OMA
-
-This tool passes all data in JSON, so your PHP install must have json_encode
-and json_decode.  These functions are standard in php 5.3+.  If an earlier 
-version of PHP 5 is being used, the php-json libraries at 
-http://pecl.php.net/package/json will be required. 
-
 
 Generating Private Key
 ------------------------
